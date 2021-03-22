@@ -1,8 +1,6 @@
 const grpc = require('grpc');
 const tasksProto = grpc.load('task.proto');
 
-const port = process.env.PORT || 8080
-
 const tasks = [
     {id: 1, title: "Title", description: "Description"}
 ]
@@ -23,6 +21,6 @@ server.addService(
     }
 )
 
-server.bind(`localhost:${port}`, grpc.ServerCredentials.createInsecure())
-console.log(`Server running at http://127.0.0.1:${port}`)
+server.bind('165.232.147.56:50051', grpc.ServerCredentials.createInsecure())
+console.log('Server running at http://127.0.0.1:50051')
 server.start()
