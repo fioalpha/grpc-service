@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 service TaskService  {
-    rpc List(Empty) returns (TaskT) {}
+    rpc List(Empty) returns (TaskList) {}
     rpc Save(TaskT) returns (TaskList) {} 
 }
 
