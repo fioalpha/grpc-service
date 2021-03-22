@@ -3,8 +3,8 @@ const tasksProto = grpc.load('task.proto');
 
 const tasks ={ id: 1, title: "Title", description: "Description"}
 
-// const IP = '165.232.147.56:50051'
-const IP = '127.0.0.1:50051'
+const IP = '165.232.147.56:50051'
+// const IP = '127.0.0.1:50051'
 
 const server = new grpc.Server();
 
