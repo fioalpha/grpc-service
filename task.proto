@@ -1,17 +1,17 @@
 syntax = "proto3";
 
 service TaskService  {
-    rpc List(Empty) returns (TaskList) {}
+    rpc List(Empty) returns (TaskT) {}
     rpc Save(TaskT) returns (TaskList) {} 
 }
 
 message Empty {}
 
 message TaskT {
-        int32 id = 1;
-        string title = 2;
-        string description = 3;
-        string date = 4;
+    int32 id = 1;
+    string title = 2;
+    string description = 3;
+    string date = 4;
 }
 
 message TaskList {
