@@ -20,6 +20,6 @@ server.addService(
     }
 )
 
-server.bind('127.0.0.1:50051', grpc.ServerCredentials.createInsecure())
+server.bind('165.232.147.56:50051', grpc.ServerCredentials.createInsecure())
 console.log('Server running at http://127.0.0.1:50051')
 server.start()
